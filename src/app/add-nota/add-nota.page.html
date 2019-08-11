@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+      <ion-title>Adicionar Número da Nota</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <h3 class="ion-text-center">Preencha o formulario</h3>
+    <ion-item>
+      <ion-label position="floating">
+        <ion-icon slot="icon-only" name="pricetag"></ion-icon>
+        Número
+      </ion-label>
+      <ion-input type="number" size="3" clearInput ></ion-input>
+    </ion-item>
+
+    <ion-button  expand="block" fill="outline" color="primary">
+      <ion-icon name="checkmark"></ion-icon>
+      Salvar
+    </ion-button>
+    <ion-button expand="block" fill="outline"  color="danger">
+      <ion-icon name="close"></ion-icon>
+      Deletar
+    </ion-button>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="barCode()">
+      <ion-icon name="barcode"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+</ion-content>
+

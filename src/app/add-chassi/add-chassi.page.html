@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+      <ion-title>Adicionar Chassi</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+
+    <h3 class="ion-text-center">Preencha o formulário</h3>
+    <ion-item>
+      <ion-label position="floating">
+        <ion-icon slot="icon-only" name="pricetag"></ion-icon>
+        Número
+      </ion-label>
+      <ion-input type="number" size="3" clearInput ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Marca</ion-label>
+      <ion-select okText="SALVAR" cancelText="CANCELAR">
+        <ion-select-option>Tesla</ion-select-option>
+        <ion-select-option>Wolkswagen</ion-select-option>
+        <ion-select-option>Fiat</ion-select-option>
+        <ion-select-option>Ford</ion-select-option>
+        <ion-select-option>Subaru</ion-select-option>
+        <ion-select-option>Volvo</ion-select-option>
+        <ion-select-option>Honda</ion-select-option>
+        <ion-select-option>Peugeot</ion-select-option>
+        <ion-select-option>Jaguar</ion-select-option>
+        <ion-select-option>Mercedes Benz</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label position="floating">
+        <ion-icon name="create"></ion-icon>
+        Modelo
+      </ion-label>
+      <ion-input clearInput></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">
+        <ion-icon slot="icon-only" name="camera"></ion-icon>
+        Foto
+      </ion-label>
+      <ion-input [(ngModel)]="foto"></ion-input>
+    </ion-item>
+    <img *ngIf="foto" [src]="foto" >
+
+    <ion-button expand="block" fill="outline" color="primary">
+      <ion-icon name="checkmark"></ion-icon>
+      Salvar
+    </ion-button>
+    <ion-button expand="block" fill="outline" color="danger">
+      <ion-icon name="close"></ion-icon>
+      Deletar
+    </ion-button>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="tirarFoto()">
+      <ion-icon name="ios-camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+</ion-content>
+
