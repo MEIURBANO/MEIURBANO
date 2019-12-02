@@ -10,7 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import {GoogleMaps} from '@ionic-native/google-maps';
 // Modal Pages
 import { ImagePageModule } from './pages/modal/image/image.module';
 import { SearchFilterPageModule } from './pages/modal/search-filter/search-filter.module';
@@ -39,7 +39,8 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
     SplashScreen,
     Camera,
     BarcodeScanner,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    GoogleMaps
   ],
   bootstrap: [AppComponent]
 })

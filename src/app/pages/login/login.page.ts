@@ -82,7 +82,7 @@ export class LoginPage implements OnInit {
 
   // // //
   goToRegister() {
-    this.navCtrl.navigateRoot('/register');
+    this.navCtrl.navigateRoot('/map');
   }
 
   goToHome() {

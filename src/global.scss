@@ -10,6 +10,15 @@
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
 
+//estilizando a searchbar do mapa 
+.searchbar-input-ccontainer {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  .searchbar-input {
+    border-radius: 0 !important;
+  }
+}
+
 ion-item {
     --ion-item-background: transparent;
 }

@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'solicitar-placa', loadChildren: './pages/solicitar-placa/solicitar-placa.module#SolicitarPlacaPageModule' },
   { path: 'add-nota', loadChildren: './add-nota/add-nota.module#AddNotaPageModule' },
   { path: 'add-chassi', loadChildren: './add-chassi/add-chassi.module#AddChassiPageModule' },
+  { path: 'map', loadChildren: './map/map.module#MapPageModule' },
   // { path: 'solicitar-placa', loadChildren: './pages/solicitar-placa/solicitar-placa.module#HomeResultsPageModule' },
 ];
 
