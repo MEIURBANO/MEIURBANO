@@ -36,7 +36,7 @@ export class MapPage implements OnInit {
 
     //setando a pagina para abrir como tela cheia
     this.mapElement.style.width = this.platform.width() + 'px'; 
-    this.mapElement.style.height = this.platform.width() + 'px';
+    this.mapElement.style.height = this.platform.height() + 'px';
     
     this.loadMap();
   } 

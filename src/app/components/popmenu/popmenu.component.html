@@ -8,15 +8,15 @@
 <div class="popup-menu">
   <div class="popup-menu-overlay" [ngClass]="{'in': openMenu}"></div>
   <div class="popup-menu-panel" [ngClass]="{'in': openMenu}">
-    <div class="popup-menu-item">
+    <div class="popup-menu-item" [routerLink]="['/settings']">
       <ion-icon name="cog" slot="middle" size="large"></ion-icon>
       <span>Configurações</span>
     </div>
-    <div class="popup-menu-item">
+  <div class="popup-menu-item" [routerLink]="['/realizar-pedido']">
       <ion-icon name="beer" slot="middle" size="large"></ion-icon>
-      <span>Menu principal</span>
+      <span>Solicitar Placa</span>
     </div>
-    <div class="popup-menu-item">
+    <div class="popup-menu-item" [routerLink]="['/edit-profile']">
       <ion-icon name="person" slot="middle" size="large"></ion-icon>
       <span>Perfil</span>
     </div>

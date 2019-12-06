@@ -1,6 +1,6 @@
-<ion-content padding>
+<ion-content>
   <div #map>
-    <ion-searchbar [(ngModel)]="search" (ionChange)="searchChanged()" placeholder="Para onde?" [hidden]="destination">
+    <ion-searchbar [(ngModel)]="search" (ionChange)="searchChanged()" placeholder="Onde será entregue a placa?" [hidden]="destination">
     </ion-searchbar>
 
     <ion-button class="ion-margin-top" (click)="back()" color="dark" fill="clear" size="small" [hidden]="!destination">
@@ -13,31 +13,31 @@
     </ion-list>
 
     <div class="request-car ion-padding ion-text-center" [hidden]="!destination">
-      <h4 class="ion-no-margin">Uberx</h4>
-      <span>Viagens baratas</span>
+      <h4 class="ion-no-margin">Express Car Plates</h4>
+      <span>Sua placa automotiva irá até você</span>
 
       <ion-grid class="ion-margin-vertical">
         <ion-row>
-          <ion-col size="4">
-            <img src="https://via.placeholder.com/65/cccccc">
-            <span class="category">UBerX</span>
-            <span class="category">R$12,00</span>
+          <ion-col size="3">
+            <img src="https://image.flaticon.com/icons/png/512/290/290163.png">
+            <span class="category">Placa R$30,00</span>
           </ion-col>
-          <ion-col size="4">
-            <img src="https://via.placeholder.com/65/cccccc">
-            <span class="category">Select</span>
-            <span class="category">R$12,00</span>
+          <ion-col size="3">
+            <img src="https://image.flaticon.com/icons/svg/1371/1371646.svg">
+            <span class="category">transporte R$15,00</span>
           </ion-col>
-          <ion-col size="4">
-            <img src="https://via.placeholder.com/65/cccccc">
-            <span class="category">Black</span>
-            <span class="category">R$12,00</span>
+          <ion-col size="2">
+            <img src="https://image.flaticon.com/icons/svg/149/149707.svg">
+          </ion-col>
+          <ion-col size="2">
+              <img src="https://image.flaticon.com/icons/svg/1086/1086741.svg">
+            <span class="category">Total R$50,00</span>
           </ion-col>
         </ion-row>
       </ion-grid>
 
-      <ion-button color="dark" expand="block">
-        Confirmar Uber
+      <ion-button color="dark" expand="block" [routerLink]="['/tutorial']">
+        Realizar o pedido da placa
       </ion-button>
     </div>
   </div>

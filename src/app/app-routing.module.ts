@@ -12,6 +12,8 @@ const routes: Routes = [
   { path: 'add-nota', loadChildren: './add-nota/add-nota.module#AddNotaPageModule' },
   { path: 'add-chassi', loadChildren: './add-chassi/add-chassi.module#AddChassiPageModule' },
   { path: 'map', loadChildren: './map/map.module#MapPageModule' },
+  { path: 'realizar-pedido', loadChildren: './realizar-pedido/realizar-pedido.module#RealizarPedidoPageModule' },
+  { path: 'tutorial', loadChildren: './tutorial/tutorial.module#TutorialPageModule' },
   // { path: 'solicitar-placa', loadChildren: './pages/solicitar-placa/solicitar-placa.module#HomeResultsPageModule' },
 ];
 

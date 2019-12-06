@@ -9,7 +9,7 @@
         </ion-text>
     </ion-title>
     <ion-buttons slot="end">
-      <ion-button size="small" shape="round" color="medium" (click)="notifications()">
+      <ion-button size="small" shape="round" color="medium" (click)="notifications(1)">
         <ion-icon name="notifications"></ion-icon>
         <ion-badge color="dark" slot="end">2</ion-badge>
       </ion-button>
@@ -22,7 +22,7 @@
    Verificar Situação
   </ion-button>
 
-  <ion-button margin shape="round" expand="full" color="secondary" [routerLink]="['/solicitar-placa']">
+  <ion-button margin shape="round" expand="full" color="secondary" [routerLink]="['/realizar-pedido']">
     Solicitar Placa Nova
   </ion-button>
 
