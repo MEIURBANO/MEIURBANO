@@ -7,6 +7,8 @@
       line-height: 20px;
       color: #fff;
     }
+
+
   }
 }
 
@@ -34,7 +36,11 @@
   ion-button{
     width: 27.17px;
     height: 27.17px;
-    //background: rgba(196, 196, 196, 0.2)
+    opacity: 0.2;
+  }
+
+  #qnt, #plussButton{
+    margin-left: 8px;
   }
 }
 
@@ -42,3 +48,5 @@
 
 
 }
+
+

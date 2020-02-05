@@ -3,7 +3,7 @@
   <!--  Voltar Icone -->
   <div>
   <!--    TODO: resolver o problema dos icones desatualizados-->
-    <ion-icon name="chevron-back"></ion-icon>
+    <ion-icon name="lock"></ion-icon>
 <!--    Botao voltar temporário-->
     <button routerLink="/home-results">Voltar</button>
   </div>
@@ -20,10 +20,11 @@
 
     <!--     Quantidade-->
     <ion-item>
-      <ion-text slot="start"> Quantidade </ion-text>
-      <ion-button slot="end"  shape="round" color="medium"> - </ion-button>
-      <ion-text slot="end"> 2 </ion-text>
-      <ion-button slot="end" shape="round" color="medium"> + </ion-button>
+      <ion-text> Quantidade </ion-text>
+<!--        TODO: CORRIGIR OPACIDADE BOTÕES-->
+      <ion-button id="lessButton" slot="end"  shape="round" color="lesspluss"> - </ion-button>
+      <ion-text id="qnt" slot="end" > 2 </ion-text>
+      <ion-button id="plussButton" slot="end" shape="round" color="lesspluss"> + </ion-button>
     </ion-item>
 
     <!--    Sub-Total -->
@@ -52,10 +53,10 @@
 
 <!--    Forma de pagamento Selecionada-->
     <div>
-      <ion-item>
+      <ion-item >
         <ion-text> Boleto Bancário </ion-text>
-        <ion-img></ion-img>
-        <ion-icon></ion-icon>
+        <div class="codBars" slot="end"></div>
+        <ion-icon name="chevron-forward" slot="end"></ion-icon>
       </ion-item>
     </div>
 
@@ -63,7 +64,7 @@
     <div id="selectPayment">
       <ion-item>
         <ion-text> Outros meios de pagamento </ion-text>
-        <ion-icon></ion-icon>
+        <ion-icon name="chevron-forward" slot="end" color="#fff"></ion-icon>
       </ion-item>
     </div>
 
