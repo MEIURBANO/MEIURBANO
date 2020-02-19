@@ -1,6 +1,9 @@
 :host {
-    ion-content {
-        --background: linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary));
+    ion-content{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -8,3 +11,72 @@
     position: relative;
     z-index: 10;
 }
+
+#buttonEntrar {
+    min-width: 322px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#buttonEntrar, #linksLogin{
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+#linksLogin {
+    color: #fff;
+    text-decoration-line: underline;
+
+    #recuperarLink, #cadastrarLink {
+        position: relative;
+
+    }
+}
+
+.loginForm {
+    ion-item {
+        min-width: 320px;
+        height: 50px;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        background-color: #fff;
+        color: #C6C6C6;
+        border-radius: 6px 6px 0px 0px;
+        border-bottom: solid 2px #8B49D2;
+        margin-bottom: 25px;
+        padding-left: 10px;
+
+        ion-label, ion-icon, ion-input{
+            margin: 0;
+            padding: 0;
+        }
+
+        ion-label {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        ion-icon {
+            font-size: 24px;
+        }
+
+        ion-input{
+            color: #000;
+        }
+    }
+}
+

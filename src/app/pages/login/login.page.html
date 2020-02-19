@@ -1,50 +1,53 @@
 <ion-content padding class="animated fadeIn login auth-page">
-  <div class="theme-bg"></div>
   <div class="auth-content">
 
     <!-- Logo -->
     <div padding-horizontal text-center class="animated fadeInDown">
       <div class="logo"></div>
+      <div class="logoFrase"></div>
+
+    <!-- Slogan do App-->
+
+      <div class="sloganApp" margin-bottom="50px">
+        <ion-text>
+          App de compra coletiva para MEI e Pequenas Empresas
+        </ion-text>
+      </div>
 
     </div>
 
     <!-- Login form -->
-    <form [formGroup]="onLoginForm" class="list-form">
-      <ion-item no-padding class="animated fadeInUp">
+    <form [formGroup]="onLoginForm" class="loginForm">
+      <ion-item lines="none" no-padding class="animated fadeInUp">
         <ion-label position="floating">
-          <ion-icon name="mail" item-start></ion-icon>
+          <ion-icon name="mail"></ion-icon>
           E-mail
         </ion-label>
         <ion-input color="secondary" type="email" formControlName="email"></ion-input>
       </ion-item>
-      <p ion-text class="text08" *ngIf="onLoginForm.get('email').touched && onLoginForm.get('email').hasError('required')">
+      <p class="text08" *ngIf="onLoginForm.get('email').touched && onLoginForm.get('email').hasError('required')">
         <ion-text color="warning">
          Campo Obrigatório
         </ion-text>
       </p>
 
-      <ion-item no-padding class="animated fadeInUp">
+      <ion-item lines="none" no-padding margin-top="10px" class="animated fadeInUp">
         <ion-label position="floating">
-          <ion-icon name="lock" item-start></ion-icon>
+          <ion-icon name="lock" ></ion-icon>
           Senha
         </ion-label>
         <ion-input color="secondary" type="password" formControlName="password"></ion-input>
       </ion-item>
-      <p ion-text color="warning" class="text08" *ngIf="onLoginForm.get('password').touched && onLoginForm.get('password').hasError('required')">
+      <p  class="text08" *ngIf="onLoginForm.get('password').touched && onLoginForm.get('password').hasError('required')">
         <ion-text color="warning">
           Campo Obrigatório
         </ion-text>
         </p>
     </form>
 
-    <p text-right tappable (click)="forgotPass()" class="paz">
-      <ion-text color="light">
-        <strong>Esqueceu sua Senha?</strong>
-      </ion-text>
-    </p>
-
+  <!--  Botões Logar-->
     <div>
-      <ion-button icon-left size="medium" expand="full" shape="round" color="dark" (click)="goToHome()" [disabled]="!onLoginForm.valid" tappable>
+      <ion-button id="buttonEntrar" shape="round" (click)="goToHome()" [disabled]="!onLoginForm.valid" tappable>
         <ion-icon name="log-in"></ion-icon>
         Entrar
       </ion-button>
@@ -77,13 +80,20 @@
 
     </div>
 
+
+
     <!-- Other links -->
-    <div text-center margin-top>
-      <span (click)="goToRegister()" class="paz" tappable>
-        <ion-text color="light">
-          Novo Aqui? <strong>Cadastrar</strong>
-        </ion-text>
-      </span>
+    <div id="linksLogin">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <ion-text text-start id="cadastrarLink" (click)="goToRegister()" tappable> CADASTRE-SE </ion-text>
+          </ion-col>
+          <ion-col size="6">
+            <ion-text text-end id="recuperarLink" (click)="forgotPass()"  tappable> RECUPERAR SENHA </ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </div>
 
   </div>
