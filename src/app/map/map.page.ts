@@ -48,8 +48,8 @@ export class MapPage implements OnInit {
 
      //Esse código é necessário para o browser
      Environment.setEnv({
-      'API_KEY_FOR_BROWSER_RELEASE': 'AIzaSyDwKRmu4J8rVSAV9VWvzDQ_sYey5Y1qKqU',
-      'API_KEY_FOR_BROWSER_DEBUG': 'AIzaSyDwKRmu4J8rVSAV9VWvzDQ_sYey5Y1qKqU'
+      'API_KEY_FOR_BROWSER_RELEASE': '',
+      'API_KEY_FOR_BROWSER_DEBUG': ''
     });
     
     //Retirando os botões de zoom 
