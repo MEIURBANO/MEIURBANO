@@ -1,0 +1,73 @@
+<ion-content padding>
+
+  <!--  Voltar Icone -->
+  <div>
+  <!--    TODO: resolver o problema dos icones desatualizados-->
+    <ion-icon name="chevron-back"></ion-icon>
+<!--    Botao voltar temporário-->
+    <button routerLink="/home-results">Voltar</button>
+  </div>
+
+  <!--  Itens-->
+  <div id="itensPayment" >
+
+<!--      TODO: CONFERIR TAMANHO IMG-->
+<!--    Descrição | Cabeçalho -->
+    <div id="paymentDetails">
+      <img src="https://http2.mlstatic.com/D_NP_789777-MLB28484908191_102018-X.jpg">
+      <ion-text> Chapa Placa Madeira Mdf Cru 3mm 10X15cm 275 Unidades </ion-text>
+    </div>
+
+    <!--     Quantidade-->
+    <ion-item>
+      <ion-text slot="start"> Quantidade </ion-text>
+      <ion-button slot="end"  shape="round" color="medium"> - </ion-button>
+      <ion-text slot="end"> 2 </ion-text>
+      <ion-button slot="end" shape="round" color="medium"> + </ion-button>
+    </ion-item>
+
+    <!--    Sub-Total -->
+    <ion-item id="subTotal">
+      <ion-text> Sub Total </ion-text>
+      <ion-text slot="end" style="font-weight: bold">R$ 65,00 </ion-text>
+    </ion-item>
+
+    <!--    Total-->
+    <ion-item id="total">
+      <ion-text> Total </ion-text>
+      <ion-text slot="end" style="font-weight: bolder"> R$ 180,00 </ion-text>
+    </ion-item>
+
+  </div>
+
+  <!--Modo de Pagemento -->
+  <div id="payments" >
+
+<!--    Titulo-->
+    <div id="titulo">
+      <ion-item>
+        <ion-text> MEIO DE PAGAMENTO </ion-text>
+      </ion-item>
+    </div>
+
+<!--    Forma de pagamento Selecionada-->
+    <div>
+      <ion-item>
+        <ion-text> Boleto Bancário </ion-text>
+        <ion-img></ion-img>
+        <ion-icon></ion-icon>
+      </ion-item>
+    </div>
+
+<!--    Selecionar outros Meios de pagamento-->
+    <div id="selectPayment">
+      <ion-item>
+        <ion-text> Outros meios de pagamento </ion-text>
+        <ion-icon></ion-icon>
+      </ion-item>
+    </div>
+
+  </div>
+
+
+</ion-content>

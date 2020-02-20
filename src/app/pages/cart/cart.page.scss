@@ -1,0 +1,44 @@
+:host{
+  ion-content{
+
+    ion-text, ion-item, ion-button, ion-icon{
+      font-family: DM Sans, sans-serif;
+      font-size: 15px;
+      line-height: 20px;
+      color: #fff;
+    }
+  }
+}
+
+#paymentDetails {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  justify-content: start;
+
+  img{
+    min-width: 131.57px;
+    min-height: 104.22px;
+    margin-right: 10px;
+    border-radius: 6px;
+  }
+
+
+}
+
+#itensPayment {
+  margin-bottom: 50px;
+
+  ion-button{
+    width: 27.17px;
+    height: 27.17px;
+    //background: rgba(196, 196, 196, 0.2)
+  }
+}
+
+#payments {
+
+
+}

@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'add-chassi', loadChildren: './add-chassi/add-chassi.module#AddChassiPageModule' },
   { path: 'realizar-pedido', loadChildren: './realizar-pedido/realizar-pedido.module#RealizarPedidoPageModule' },
   { path: 'tutorial', loadChildren: './tutorial/tutorial.module#TutorialPageModule' },
+  { path: 'cart', loadChildren: './pages/cart/cart.module#CartPageModule' },
   // { path: 'solicitar-placa', loadChildren: './pages/solicitar-placa/solicitar-placa.module#HomeResultsPageModule' },
 ];
 

@@ -246,3 +246,10 @@ ion-item {
       margin-bottom: -2px;
     }
   }
+
+  .centralize {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
